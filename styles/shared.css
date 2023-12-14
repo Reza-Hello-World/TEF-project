@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-image: url(../images/cool-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    direction: ltr;
+}
+
+.main-header {
+    width: 100%;
+    background: rgb(68, 15, 118);
+    padding: 8px 16px;
+    position: absolute;
+    top: 0;
+}
+
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__logo {
+    font-size: 25px;
+}
+
+.main-header__logo img {
+    height: 45px;
+    width: 47px;
+    border-radius: 4px;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 70px);
+    text-align: right;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.main-nav__item {
+    display: inline;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.main-nav__item a:hover {
+    color: rgb(33, 124, 185);
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 8px;
+}
+
+main>p::first-letter {
+    font-size: large;
+    color: red;
+}
+
+.main-nav--item-acount a {
+    background-color: rgb(4, 96, 83);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-nav--item-acount a:hover {
+    color: white
+}
+
+footer {
+    margin-top: 90px;
+    background-image: linear-gradient(rgb(4, 96, 93), rgb(9, 49, 78));
+    /* background-color: rgb(68, 15, 118); */
+}
+
+footer .title {
+    padding-top: 8px;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer .text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer ul {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    padding: 0;
+    text-align: center;
+}
+
+footer li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+footer img:hover {
+    box-shadow: 0 0 6px rgb(14, 31, 31);
+    width: 47px;
+    height: 47px;
+}
+
+.specialTele {
+    width: 80px;
+    height: 50px;
+}
+
+.specialDis {
+    margin-right: 33px;
+}

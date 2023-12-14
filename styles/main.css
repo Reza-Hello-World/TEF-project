@@ -1,0 +1,188 @@
+.backdrop {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.plans-section {
+    color: rgb(21, 187, 112);
+    margin-top: 80px;
+}
+
+.plan-header {
+    text-align: center;
+    color: white;
+}
+
+.plan-header::first-letter {
+    color: red;
+    font-size: 35px;
+}
+
+.plan-lists {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.help {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.plans {
+    width: 100%;
+    display: block;
+    background-color: rgb(170, 216, 206);
+    border-radius: 8px;
+    margin-top: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 240px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.615);
+}
+
+.highlited-h {
+    box-shadow: 0px 0px 10px rgb(22, 171, 123);
+    border-radius: 8px;
+    padding: 8px 8px;
+    margin: 10px 16px;
+}
+
+.btn {
+    margin-top: 35px;
+    border-radius: 3px;
+    border: none;
+    padding: 4px 10px;
+    font: inherit;
+    font-weight: bold;
+    background-color: rgb(101, 66, 133);
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(103, 49, 153);
+}
+
+@media(min-width:45rem) {
+    .plans {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+        min-width: 12rem;
+    }
+}
+
+.plan-cost::first-letter {
+    font-size: 20px;
+}
+
+#user-exprience {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.users {
+    margin-top: 60px;
+}
+
+.user {
+    margin: 8px 100px;
+}
+
+.user img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgb(255, 255, 255);
+    box-shadow: 0 0 4px 1px rgb(141, 76, 138);
+    transition: 0.2s
+}
+
+.user img:hover {
+    width: 106px;
+    height: 106px;
+}
+
+.users ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.users li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.user-exprience__title {
+    font-size: 1.5em;
+}
+
+.user-exprience__title::first-letter {
+    color: red;
+    font-size: 35px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    margin-left: 35%;
+    margin-top: 7%;
+    width: 32%;
+    height: 25%;
+    background-color: rgb(101, 66, 133, 0.85);
+    border-radius: 5px;
+    padding: 0.5rem;
+    animation-name: modalName;
+    animation-duration: 1s;
+}
+
+.modal__title {
+    text-align: center;
+}
+
+.modal__actions {
+    text-align: center;
+}
+
+.modal__action {
+    font-size: 1rem;
+    background-color: green;
+    padding: 0.25rem;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.modal__action:hover {
+    font-size: 1.04rem;
+}
+
+.modal__action__negative {
+    font-size: 0.8rem;
+    background-color: red;
+    border-radius: 3px;
+    padding: 0.25rem;
+    border: 0;
+    transition: 0.2s;
+}
+
+.modal__action__negative:hover {
+    font-size: 1.03rem;
+    cursor: pointer;
+}
+
+@keyframes modalName {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

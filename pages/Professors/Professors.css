@@ -1,0 +1,14 @@
+.Professors {
+    display: inline-block;
+}
+
+.Professors img {
+    height: 250px;
+    width: 200px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.615);
+    border-radius: 3px;
+}
+
+footer {
+    margin-top: 709px;
+}
